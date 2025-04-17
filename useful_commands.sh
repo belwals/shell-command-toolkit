@@ -108,6 +108,9 @@ df -h
 # chmod -wx filename to take out write and executable permissions.
 # Note that “r” is for read, “w” is for write, and “x” is for execute. 
 chmod +x <file_name>
+# chmod also follow octal code 4=read,2=write,1=execute -- 7 mean all 6 mean read and write 5 mean read and execute
+chmod 777 <file_name> # 777 -- Owner| Owner Group| Other
+
 
 # Chanfing owning group for a file or directory
 # syntax: chown USER FILE
